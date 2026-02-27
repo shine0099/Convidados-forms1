@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Depaysement: a Caçada ao Rei</title>
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600&family=EB+Garamond&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    background: radial-gradient(circle at top, #1a1a1a 0%, #0b0b0b 70%);
+    font-family: 'EB Garamond', serif;
+    color: #e6d8a8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    width: 95%;
+    max-width: 900px;
+    background: linear-gradient(145deg, #111111, #1c1c1c);
+    border: 2px solid #d4af37;
+    border-radius: 14px;
+    padding: 45px;
+    box-shadow: 0 0 40px rgba(212, 175, 55, 0.35);
+    position: relative;
+}
+
+.container::before {
+    content: "";
+    position: absolute;
+    inset: 8px;
+    border: 1px solid rgba(212, 175, 55, 0.4);
+    border-radius: 10px;
+    pointer-events: none;
+}
+
+h1 {
+    font-family: 'Cinzel', serif;
+    text-align: center;
+    color: #d4af37;
+    letter-spacing: 3px;
+    margin-bottom: 8px;
+    font-size: 30px;
+}
+
+.subtitulo {
+    text-align: center;
+    font-style: italic;
+    margin-bottom: 35px;
+    color: #cbb26a;
+    font-size: 16px;
+}
+
+h2 {
+    font-family: 'Cinzel', serif;
+    color: #d4af37;
+    border-bottom: 1px solid #d4af37;
+    padding-bottom: 6px;
+    margin-top: 35px;
+    letter-spacing: 1px;
+}
+
+label {
+    display: block;
+    margin-top: 18px;
+    font-weight: 600;
+    color: #d4af37;
+}
+
+input, textarea {
+    width: 100%;
+    margin-top: 6px;
+    padding: 12px;
+    background: #141414;
+    border: 1px solid #d4af37;
+    border-radius: 8px;
+    color: #e6d8a8;
+    font-family: 'EB Garamond', serif;
+    font-size: 15px;
+}
+
+textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+button {
+    margin-top: 30px;
+    padding: 14px;
+    width: 100%;
+    background: #d4af37;
+    color: #000;
+    font-weight: bold;
+    font-family: 'Cinzel', serif;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s ease;
+    letter-spacing: 1px;
+}
+
+button:hover {
+    background: #b9962f;
+    box-shadow: 0 0 20px rgba(212, 175, 55, 0.6);
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+    <h1>Depaysement: a Caçada ao Rei</h1>
+    <p class="subtitulo">
+        Malventurados aqueles que ousam desafiar a divindade soberana.
+    </p>
+
+    <form action="https://formsubmit.co/gsousamesquita09@gmail.com" method="POST">
+
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_subject" value="Nova Ficha - Depaysement: a Caçada ao Rei">
+
+        <h2>Seção I — Identidade do Personagem</h2>
+
+        <label>Nome do Personagem</label>
+        <input type="text" name="Nome do Personagem" required>
+
+        <label>Altura</label>
+        <input type="text" name="Altura" required>
+
+        <label>Raça</label>
+        <input type="text" name="Raça" required>
+
+        <label>Cor do Cabelo</label>
+        <input type="text" name="Cor do Cabelo">
+
+        <label>Cor da Pele</label>
+        <input type="text" name="Cor da Pele">
+
+        <label>Tipo de Cabelo</label>
+        <input type="text" name="Tipo de Cabelo">
+
+        <label>Classe</label>
+        <input type="text" name="Classe" required>
+
+        <h2>Seção II — Declaração de Missão</h2>
+
+        <label>O que seu personagem busca nesta missão?</label>
+        <textarea name="Objetivo da Missão" required></textarea>
+
+        <label>Qual é a recompensa prometida aos jogadores que o ajudarem?</label>
+        <textarea name="Recompensa Prometida" required></textarea>
+
+        <button type="submit">Selar o Juramento</button>
+
+    </form>
+</div>
+
+</body>
+</html>
